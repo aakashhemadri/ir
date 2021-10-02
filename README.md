@@ -12,11 +12,13 @@ python3 -m pip --user install pipenv
 
 ```bash
 # Install pipenv environment
+cd /path/to/project/root
 python3 -m pipenv install
 ```
 
 ```bash
 # Enter python environment
+cd /path/to/project/root
 python3 -m pipenv shell
 ```
 
@@ -26,10 +28,13 @@ python3 -m pipenv shell
 # If docker/docker-compose was setup correctly kibana should be up on localhost:5601
 # Currently one must import csv's externally through kibana after crawling sites.
 # Pre-Crawled data is under data/*, Use that. 
+cd /path/to/project/root
 sh init.sh
 ```
 
 ```bash
 # Specifically crawling with scrapy
+cd /path/to/project/root
 scrapy crawl ArsTechnica -o ars-technica.new.csv
-``` 
+```
+

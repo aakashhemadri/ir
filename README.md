@@ -1,8 +1,16 @@
 # ir
 
-## Usage
+### Requirements
 
 Requirements to run this project on your system: python 3.6+, pip, docker, docker-compose. Ideally run on a Linux distro of your choice.
+
+```bash
+# Clone this repository
+git clone https://github.com/aakashhemadri/ir.git
+cd ir
+```
+
+### Environment setup
 
 ```bash
 # Install pipenv, This is likely already installed on system
@@ -16,11 +24,17 @@ cd /path/to/project/root
 python3 -m pipenv install
 ```
 
+Always run the below before entering running the usage commands.
+
 ```bash
 # Enter python environment
 cd /path/to/project/root
 python3 -m pipenv shell
 ```
+
+### Usage
+
+Run initial setup script
 
 ```bash
 # To setup the the docker env and do a crawl on ars-technica
@@ -31,6 +45,8 @@ python3 -m pipenv shell
 cd /path/to/project/root
 sh init.sh
 ```
+
+Crawling custom spiders
 
 ```bash
 # Specifically crawling with scrapy

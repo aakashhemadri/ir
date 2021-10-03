@@ -24,7 +24,7 @@ cd /path/to/project/root
 python3 -m pipenv install
 ```
 
-Always run the below before entering running the usage commands.
+Always run the below before running the usage commands.
 
 ```bash
 # Enter python environment
